@@ -13,7 +13,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Discover succession management for your small businesses with Phased.io; a digital tool for knowledge transfer.">
+    <meta name="keywords" content="phased.io, phased.io nova scotia, phased.io ns, phasedio, phasedio nova scotia, phasedio ns, succession management, small business management, succession planning small business">
     <meta name="author" content="">
 
     <title>Phased.io | Succession Management</title>
