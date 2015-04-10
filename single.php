@@ -8,7 +8,9 @@
 			<h1><?php the_title(); ?></h1>
 			<h4>Posted on <?php the_time('F jS, Y'); ?></h4>
 			<p><?php the_content(); ?></p>
-		<hr> <?php endwhile; else: ?>
+			<hr>
+			<?php comments_template(); ?>
+		 <?php endwhile; else: ?>
 		<p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
 	</div>
 

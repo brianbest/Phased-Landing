@@ -4,49 +4,17 @@ Template Name: Home Page
 */
 
  get_header(); ?>    
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="#">Phased.io - Succession Managment</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-
+    
     <!-- Header -->
     <a name="about"></a>
     <div class="intro-header">
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-xs-12 col-sm-6">
                     <div class="intro-message">
                         <h1 class="makeItWhite-txt">Phased.<span style="color:#141B26;">io</span></h1>
-                        <h3 class="makeItWhite-txt">Succession Managment</h3>
+                        <h3 class="makeItWhite-txt">Succession Management for Small Businesses</h3>
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
@@ -60,6 +28,9 @@ Template Name: Home Page
                             </li>
                         </ul>
                     </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 iframeHolder">
+                    <iframe width="100%" src="https://www.youtube.com/embed/o1ii6MLcyQk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -77,10 +48,9 @@ Template Name: Home Page
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Does your company have<br> digital institutional memory?</h2>
-                    <p class="lead">When employee number 7 leaves your company unexpectiantly, do you have a plan for how their replacement gets up to speed? there is an inefficiency between succession planning and on-the-job training so we created Phased.io. We help transfer knowledge when a new employee is actually in the seat and learning on-the-job.</p>
+                    <h2 class="section-heading">Digital Memory<br> For Small Businesses</h2>
+                    <p class="lead">When an employee retires or leaves an organization they take a lot of knowledge with them. Most times new employees learn the ropes through USBs, manuals, and cloud folders but in small businesses your 'training' is often on-the-job learning. Phased.io stores your forms, contacts and knowledge, leaving a blueprint for employees of the present and future. It is the living memory of your organization so you can access info when you need it as you need it.</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <!-- <img class="img-responsive" src="img/ipad.png" alt=""> -->
@@ -100,10 +70,9 @@ Template Name: Home Page
 
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Easy input.<br>Great output.</h2>
-                    <p class="lead">Phased.io provides an easy way for current employees to find and document knowledge, share their contacts, and suggest videos and courses that helped them do their job.</p>
+                    <p class="lead">Phased.io provides an easy way for current employees to search and document knowledge, share contacts, and suggest videos and courses that helped employees do their job. This information will live in your organization and be accessible by employees of the future.</p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                     <!-- <img class="img-responsive" src="img/dog.png" alt=""> -->
@@ -123,14 +92,13 @@ Template Name: Home Page
 
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Sign up for our pilot program!</h2>
-                    <p class="lead">Phased.io is currently accepting applicants to our pilot program! Accepted members to this pilot program will help us fine tune a solution that meets their needs, helping us generate features to help other companies all over the world. You will become the ambassadors of Phased.io! <a href="/apply-now/" class='makeItGreen-txt'>Apply Now!</a></p>
+                    <h2 class="section-heading">Sign up for our Pilot Program!</h2>
+                    <p class="lead">We're on a mission to fine-tune Phased.io and are looking for help! If you're a small business in Cape Breton we encourage you to apply as a potential Pilot Representative. Your contribution will help create a solution that realistically fits with small business around the world. Lastly, your organization will become an extended member of our founding family; giving you access to various early adopter benefits! <a href="/apply-now/" class='makeItGreen-txt'>Apply Now!</a></p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <!-- <img class="img-responsive" src="img/phones.png" alt=""> -->
-                    <i class="fa fa-paper-plane-o fa-5x makeItGreen-txt" style="font-size:20em;"></i>
+                    <i class="fa fa-paper-plane-o fa-5x makeItGreen-txt" style="font-size:20em;margin: 0 auto;display:block"></i>
                 </div>
             </div>
 

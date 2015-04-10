@@ -8,7 +8,7 @@
 
             <div class="row">
                 <div class="col-lg-6">
-                    <h2>Connect to Phased.io:</h2>
+                    <h2>Connect with Phased.io:</h2>
                 </div>
                 <div class="col-lg-6">
                     <ul class="list-inline banner-social-buttons">
@@ -40,19 +40,23 @@
                 <div class="col-lg-12">
                     <ul class="list-inline">
                         <li>
-                            <a href="#">Home</a>
+                            <a href="/#">Home</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#about">About</a>
+                            <a href="/#about">About</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#services">Services</a>
+                            <a href="/#services">Services</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#contact">Contact</a>
+                          <a href="/blogs">Blog</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="/#contact">Contact</a>
                         </li>
                     </ul>
                     <p class="copyright text-muted small">Copyright &copy; Phased.io 2014. All Rights Reserved</p>
