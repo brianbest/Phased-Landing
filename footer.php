@@ -13,16 +13,16 @@
                 <div class="col-lg-6">
                     <ul class="list-inline banner-social-buttons">
                         <li>
-                            <a href="https://twitter.com/phased_io" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                            <a href="https://twitter.com/phased_io" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name"></span></a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/phased.io" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                            <a href="https://www.facebook.com/phased.io" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name"></span></a>
+                        </li>
+                        <li>
+                            <a href="mailto:colin@phased.io" class="btn btn-default btn-lg"><i class="fa fa-envelope-o fa-fw"></i> <span class="network-name"></span></a>
                         </li>
                         <li>
                             <a href="" data-toggle="modal" data-target="#emailModal" class="btn btn-default btn-lg"><i class="fa fa-envelope-o fa-fw"></i> <span class="network-name">Subscribe</span></a>
-                        </li>
-                        <li>
-                            <a href="mailto:colin@phased.io" class="btn btn-default btn-lg"><i class="fa fa-envelope-o fa-fw"></i> <span class="network-name">Email</span></a>
                         </li>
                     </ul>
                 </div>
@@ -74,7 +74,7 @@
         <h4 class="modal-title">A bit about us...</h4>
       </div>
       <div class="modal-body">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/o1ii6MLcyQk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GdVGUccp1bc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

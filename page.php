@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
 
-<div class="container-fluid">
+<div class="container" style="padding-top:5rem">
   <div class="row">
-	<div class="col-sm-12 col-md-10 col-md-offset-1">
+	<div class="col-sm-12 col-md-6 col-md-offset-3">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<h1><?php the_title(); ?></h1>
 			<p><?php the_content(); ?></p>

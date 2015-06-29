@@ -183,3 +183,36 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+
+
+
+
+.intro-header{
+    text-align: center;
+}
+.iframeHolder iframe{
+    height: 180px;
+}
+
+
+
+@media (min-width: 768px) {
+    .iframeHolder iframe{
+        margin-top: 9rem;
+        height: 280px;
+    }
+    .intro-header{
+        text-align: left;
+    }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .iframeHolder iframe{
+        height: 250px;
+    }
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+ }

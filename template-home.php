@@ -11,26 +11,20 @@ Template Name: Home Page
         <div class="container">
 
             <div class="row">
-                <div class="col-xs-12 col-sm-6">
+                <div class="col-xs-12 col-sm-7 col-md-6">
                     <div class="intro-message">
-                        <h1 class="makeItWhite-txt">Phased.<span style="color:#141B26;">io</span></h1>
+                        <h1 align="center" class="makeItWhite-txt">Phased.<span style="color:#141B26;">io</span></h1>
                         <h3 class="makeItWhite-txt">Succession Management for Small Businesses</h3>
-                        <hr class="intro-divider">
+                        <hr>
                         <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="https://twitter.com/phased_io" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                            </li>
-                            <li>
-                                <a href="" id="playvid" class="btn btn-default btn-lg" data-toggle="modal" data-target="#videoModal"><i class="fa fa-play fa-fw"></i> <span class="network-name">About Us</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/phased.io" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                            <li style="width:100%;">
+                                <a href="/apply-now/" class="btn btn-default btn-lg" style="  width: 20rem;margin: 0 auto;display: block;"><i class="fa fa-arrow-right fa-fw"></i> <span class="network-name">Apply Now!</span></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 iframeHolder">
-                    <iframe width="100%" src="https://www.youtube.com/embed/o1ii6MLcyQk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                <div class="col-xs-12 col-sm-5 col-md-6 iframeHolder">
+                   <iframe width="100%" src="https://www.youtube.com/embed/Ws3VDoCedhY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -98,7 +92,7 @@ Template Name: Home Page
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <!-- <img class="img-responsive" src="img/phones.png" alt=""> -->
-                    <i class="fa fa-paper-plane-o fa-5x makeItGreen-txt" style="font-size:20em;margin: 0 auto;display:block"></i>
+                    <i class="fa fa-paper-plane-o fa-5x makeItGreen-txt" style="font-size:20em;margin: 0 auto;display:block;  width: 30rem;"></i>
                 </div>
             </div>
 

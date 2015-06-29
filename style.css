@@ -15,20 +15,24 @@ Text Domain: twentythirteen
 	text-align: center;
 }
 .iframeHolder iframe{
-	height: 180px;
+	height: 280px;
 }
 
 
 
 @media (min-width: 768px) {
 	.iframeHolder iframe{
-		height: 280px;
+		margin-top: 9rem;
+		height: 300px;
+	}
+	.intro-header{
+		text-align: left;
 	}
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 	.iframeHolder iframe{
-		height: 250px;
+		height: 311px;
 	}
  }
 
