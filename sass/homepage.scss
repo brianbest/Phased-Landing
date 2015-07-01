@@ -1,0 +1,114 @@
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+  padding:2rem 0;
+}
+.btn{
+    padding: .75rem 2rem;
+}
+
+.btn-success{
+  background-color: #11BA55;
+}
+p{
+  font-size: 1.5rem;
+}
+.ph-header{
+  background-color: #a6a6a6;
+  background: url(../img/header.jpg) no-repeat center center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:#fff;
+  h1{
+    font-size: 7.5rem;
+    padding-top: 4rem;
+    text-shadow: 0 1px 5px rgba(0,0,0,.45);
+  }
+  p{
+    max-width: 500px;
+    font-size: 2rem;
+    margin: 0 auto;
+    text-shadow: 0 1px 5px rgba(0,0,0,.45);
+  }
+  img{
+    margin: 2rem auto;
+    width: 350px;
+    display: block;
+  }
+  .mainSignup{
+      float: right;
+      margin-top: 1.5rem;
+      &:after{clear:both;}
+  }
+  span{
+    display: block;
+    margin: 2rem auto;
+    width: 80px;
+    height: 80px;
+    font-size: 8rem;
+    text-shadow: 0 1px 5px rgba(0,0,0,.45);
+  }
+}
+.ph-callToAction{
+  background-color: #193441;
+  color:#fff;
+  padding:0rem 0;
+  h3{
+    margin-top: 0.5rem;
+  }
+  .btn{
+    margin-left: 1rem;
+  }
+}
+.ph-tourStart{
+  padding:1rem 0;
+  background-color:#11BA55;
+  color:#fff;
+  h1{
+    font-size: 48px;
+    margin: 1.5rem 0;
+  }
+}
+.ph-currentUsers{
+  color:#555459;
+}
+footer{
+  color:#555459;
+  h1{
+    font-size: 7.5rem;
+  }
+  h2{
+    font-size: 4.5rem;
+  }
+  .btn{
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
+
+.ph-features{
+  background-color: #F7F5F3;
+  .row{
+    padding-top:2rem;
+    padding-bottom:2rem;
+  }
+}
+
+.ph-endLinks{
+  margin-top: 2rem;
+  p,ul,li{
+    display: inline;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  ul{
+    padding: 0;
+    margin: 0;
+  }
+  li{
+    margin: 2rem 1rem;
+
+  }
+}
