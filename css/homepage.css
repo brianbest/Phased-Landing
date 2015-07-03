@@ -12,6 +12,18 @@
 p {
   font-size: 1.5rem; }
 
+.logoArea {
+  overflow: auto;
+  display: block;
+  width: 500px; }
+  .logoArea img, .logoArea h2, .logoArea h1 {
+    display: inline-block;
+    float: left; }
+  .logoArea img {
+    margin-right: 1rem; }
+  .logoArea h2 {
+    line-height: 1.6; }
+
 .ph-header {
   background-color: #a6a6a6;
   background: url(../img/header.jpg) no-repeat center center;
