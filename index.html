@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="PhasedApp">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Phased.io | Succession Management</title>
 
     <!-- Bootstrap Core CSS -->
@@ -20,7 +18,13 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Muli" rel="stylesheet" type="text/css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/0.9.0/angularfire.min.js"></script>
+    <script>
+    window.heap=window.heap||[],heap.load=function(t,e){window.heap.appid=t,window.heap.config=e;var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https:":"https:")+"//cdn.heapanalytics.com/js/heap-"+t+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(t){return function(){heap.push([t].concat(Array.prototype.slice.call(arguments,0)))}},p=["clearEventProperties","identify","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+    heap.load("3872895156");
+    </script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -30,26 +34,29 @@
 
 </head>
 
-<body>
+<body ng-controller="HomeController">
 
   <section class="ph-header">
     <div class="container">
       <div class="row">
-        <div class="col-xs-9">
+        <div class="col-xs-6 col-xs-offset-1 col-sm-9 col-sm-offset-0">
           <h2>Phased.io</h2>
         </div>
         <div class="col-xs-3">
-          <a class="btn btn-success mainSignup" href="#" role="button">Sign Up</a>
+          <a class="btn btn-success mainSignup" href="" role="button" data-toggle="modal" data-target="#myModal">Sign Up</a>
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0">
           <h1 align="center">Shifting knowledge from people to teams!</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12">
-          <span class="glyphicon glyphicon-play-circle"></span>
+        <div class="col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0">
+          <span ng-hide="pumpUpVideo" ng-click="showVideo()" class="glyphicon glyphicon-play-circle playVideo"></span>
+          <div class="videoHolder" ng-show="pumpUpVideo">
+            <iframe width="100%" height="280" src="https://www.youtube.com/embed/Sd8sFPxgK8U?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
           <p align="center">Phased.io is a tool for writing quick accurate documentation that fits in <i>your</i> workflow!</p>
         </div>
       </div>
@@ -58,9 +65,9 @@
   <section class="ph-callToAction">
     <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-xs-offset-3">
+        <div class="col-xs-8 col-xs-offset-2">
           <div class="ph-callForm">
-            <h3 align="center">Get on to the beta list! <a class="btn btn-info" href="#" role="button">Sign Up</a></h3>
+            <h3 align="center">Get on to the beta list! <a class="btn btn-info" href="" role="button" data-toggle="modal" data-target="#myModal">Sign Up</a></h3>
           </div>
         </div>
       </div>
@@ -73,7 +80,7 @@
           <h2 align="center">Simple documentation that gets right to the point.</h2>
           <p align="center">No more formatting or messy installs. Just your knowledge when you need it the most.</p>
           <hr>
-          <!-- <p align="center"><small>Here are some of the companies that are pionnering this app</small></p> -->
+
         </div>
       </div>
     </div>
@@ -90,31 +97,31 @@
   <section class="ph-features">
     <div class="container">
       <div class="row">
-        <div class="col-xs-6">
+        <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0">
           <h2>Figure out what your team is doing right now</h2>
           <p>We spend 10 - 20% of our work week is in meetings. Staying informed about what the rest of the organization is doing is necessary for good productivity to work! Phased helps you to work together with your team by staying on top of what is happening now with simple status.</p>
         </div>
-        <div class="col-xs-6">
+        <div class="hidden-xs col-sm-6 col-sm-offset-0">
           <img src="img/activestatus5.png">
         </div>
       </div>
       <hr>
       <div class="row">
-        <div class="col-xs-6">
+        <div class="hidden-xs col-sm-6 col-sm-offset-0">
           <img src="img/docs.png">
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0">
           <h2>Simple to understand and easy read documentation</h2>
-          <p>Documentation comes in two forms: not enough, or too much! We have a simple way of fixing this by asking you to fill small bits of documentation while you're working on the task! <strong>Improveing accuracy and readablity</strong></p>
+          <p>Documentation comes in two forms: not enough, or too much! We have a simple way of fixing this by asking you to fill small bits of documentation while you're working on the task! <strong>Improving accuracy and readablity</strong></p>
         </div>
       </div>
       <hr>
       <div class="row">
-        <div class="col-xs-6">
-          <h2>Where you are, when your ready</h2>
-          <p>Phased is designed to be there when you need it, and not be intruseive to your workflow. Stay on top of whats going on with our browser extentions, read company docs in command line, or have our app off to the side in another monitor.</p>
+        <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0">
+          <h2>Where you are, when you're ready</h2>
+          <p>Phased is designed to be there when you need it, and not be intruseive to your workflow. Stay on top of what's going on with our browser extentions, read company docs in command line, or have our app off to the side in another monitor.</p>
         </div>
-        <div class="col-xs-6">
+        <div class="hidden-xs col-sm-6 col-sm-offset-0">
           <img src="img/platforms.png">
         </div>
       </div>
@@ -127,24 +134,52 @@
         <div class="col-xs-12">
           <h1 align="center">Phased.io</h1>
           <h2 align="center">We're in the business of helping you keep your workplace up to date and accessible</h2>
-          <a class="btn btn-success" href="#" role="button">Sign Up</a>
+          <a class="btn btn-success" href="" role="button" data-toggle="modal" data-target="#myModal">Sign Up</a>
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-8 col-xs-offset-2 ph-endLinks">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 ph-endLinks">
           <p>Created by Phased.io inc 2015</p>
           <ul>
             <li><a href="http://blog.phased.io/">Our blog</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-            <li>Twitter: <a href="#">@phased_io</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Investors</a></li>
-            <li>Press inquires: <a href="#">pr@phased.io</a></li>
+            <!-- <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li> -->
+            <li>Twitter: <a href="https://twitter.com/phased_io">@phased_io</a></li>
+            <li>Facebook: <a href="https://www.facebook.com/phased.io">phased.io</a></li>
+            <li><a href="mailto:whatup@phased.io">Contact us</a></li>
+            <li><a href="https://angel.co/phased-io">Investors</a></li>
+            <li>Press inquires: <a href="mailto:pr@phased.io">pr@phased.io</a></li>
           </ul>
         </div>
     </div>
   </footer>
+
+
+  <!-- Sign up Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <form ng-submit="addEmail(user)" novalidate ng-hide="formGone">
+        <div class="modal-body">
+          <i class="fa fa-globe fa-5x"></i>
+          <h3 class="modal-title" align="center" id="myModalLabel">Sign up for our beta</h3>
+
+          <input type="email" ng-model="user.email" placeholder="your@email.com">
+
+          <p align="center"><small>We try keep emails to a minium at phased. We hate span as much as you do!</small></p>
+        </div>
+        <div class="modal-footer">
+          <input type="submit" class="btn btn-primary" value="Sign Up!">
+        </div>
+      </form>
+      <div class="modal-body" ng-hide="!formGone">
+        <i class="fa fa-heart fa-5x"></i>
+        <h2 align="center">Thank you!!!</h2>
+        <p align="center">We will keep you up to date on Phased.io!</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 
     <script>
@@ -157,19 +192,13 @@
       ga('send', 'pageview');
 
 
-
-      var downloadLink = document.getElementById('playvid');
-        addListener(downloadLink, 'click', function() {
-      ga('send', 'event', 'button', 'click', 'video-play');
-    });
-
   </script>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/app.js"></script>
 </body>
 
 </html>

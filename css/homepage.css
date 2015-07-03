@@ -21,7 +21,7 @@ p {
   background-size: cover;
   color: #fff; }
   .ph-header h1 {
-    font-size: 7.5rem;
+    font-size: 4.5rem;
     padding-top: 4rem;
     text-shadow: 0 1px 5px rgba(0, 0, 0, 0.45); }
   .ph-header p {
@@ -45,6 +45,10 @@ p {
     height: 80px;
     font-size: 8rem;
     text-shadow: 0 1px 5px rgba(0, 0, 0, 0.45); }
+  .ph-header .playVideo {
+    cursor: pointer; }
+  .ph-header .videoHolder {
+    width: 100%; }
 
 .ph-callToAction {
   background-color: #193441;
@@ -71,7 +75,7 @@ footer {
   footer h1 {
     font-size: 7.5rem; }
   footer h2 {
-    font-size: 4.5rem; }
+    font-size: 2.5rem; }
   footer .btn {
     margin-top: 2rem;
     width: 100%; }
@@ -93,5 +97,35 @@ footer {
     margin: 0; }
   .ph-endLinks li {
     margin: 2rem 1rem; }
+
+.modal input[type="email"] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 2.5rem;
+  text-align: center; }
+.modal .fa {
+  width: 5rem;
+  display: block;
+  margin: 0 auto; }
+.modal .fa-globe {
+  color: #11BA55; }
+.modal .fa-heart {
+  color: #E74C3C; }
+.modal p {
+  margin-top: 1rem; }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .ph-header h1 {
+    font-size: 7.5rem; }
+  .ph-header .videoHolder {
+    width: 453px;
+    margin: 0 auto; }
+
+  footer h2 {
+    font-size: 4.5rem; } }
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
 
 /*# sourceMappingURL=homepage.css.map */
