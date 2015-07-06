@@ -135,7 +135,7 @@ footer {
     width: 453px;
     margin: 0 auto; }
   .ph-header .mainSignup {
-    width: inherit;
+    width: auto;
     float: right;
     margin-top: 1.5rem; }
     .ph-header .mainSignup:after {
