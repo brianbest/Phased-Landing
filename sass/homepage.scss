@@ -184,7 +184,12 @@ footer{
   .callToAction{}
   .ph-currentUsers{}
   .ph-tourStart{}
-  .ph-features{}
+  .ph-features{
+    h2{
+      font-size: 4rem;
+      font-weight: 900;
+    }
+  }
   footer{
     h1{
       font-size: 7.5rem;
