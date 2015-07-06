@@ -44,10 +44,7 @@ p {
     width: 350px;
     display: block; }
   .ph-header .mainSignup {
-    float: right;
-    margin-top: 1.5rem; }
-    .ph-header .mainSignup:after {
-      clear: both; }
+    width: 100%; }
   .ph-header span {
     display: block;
     margin: 2rem auto;
@@ -137,6 +134,12 @@ footer {
   .ph-header .videoHolder {
     width: 453px;
     margin: 0 auto; }
+  .ph-header .mainSignup {
+    width: inherit;
+    float: right;
+    margin-top: 1.5rem; }
+    .ph-header .mainSignup:after {
+      clear: both; }
 
   footer h1 {
     font-size: 7.5rem; }

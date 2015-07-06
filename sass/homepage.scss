@@ -54,9 +54,7 @@ p{
     display: block;
   }
   .mainSignup{
-      float: right;
-      margin-top: 1.5rem;
-      &:after{clear:both;}
+      width: 100%;
   }
   span{
     display: block;
@@ -175,6 +173,12 @@ footer{
     .videoHolder{
       width: 453px;
       margin: 0 auto;
+    }
+    .mainSignup{
+      width: inherit;
+        float: right;
+        margin-top: 1.5rem;
+        &:after{clear:both;}
     }
   }
   .callToAction{}
