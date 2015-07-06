@@ -1,8 +1,8 @@
 .container{
-  max-width: 960px;
-  margin: 0 auto;
-  padding:2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
+
 .btn{
     padding: .75rem 2rem;
 }
@@ -17,8 +17,7 @@ p{
 .logoArea{
   overflow: auto;
   display: block;
-  width:500px;
-  
+
   img,h2,h1{
     display:inline-block;
     float: left;
@@ -101,7 +100,7 @@ p{
 footer{
   color:#555459;
   h1{
-    font-size: 7.5rem;
+    font-size: 4rem;
   }
   h2{
     font-size: 2.5rem;
@@ -164,6 +163,11 @@ footer{
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .container{
+    max-width: 960px;
+    margin: 0 auto;
+    padding:2rem 0;
+  }
   .ph-header{
     h1{
       font-size: 7.5rem;
@@ -178,9 +182,17 @@ footer{
   .ph-tourStart{}
   .ph-features{}
   footer{
+    h1{
+      font-size: 7.5rem;
+    }
     h2{
       font-size: 4.5rem;
     }
+  }
+  .logoArea{
+    overflow: auto;
+    display: block;
+    width:500px;
   }
 }
 
